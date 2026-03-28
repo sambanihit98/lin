@@ -59,7 +59,7 @@ Lin Theme includes several handy shortcodes for content layout and styling:
 |----------|-------------|
 | `justify` | Sets horizontal alignment of columns. Accepts Bootstrap options: `start`, `center`, `end`, `around`, `between`, `evenly`. |
 | `align` | Sets vertical alignment of columns. Accepts Bootstrap options: `start`, `center`, `end`, `baseline`, `stretch`. |
-| `g` | Sets the gutter (spacing between columns). Accepts numeric values corresponding to Bootstrap gutter classes, default is `4` (`g-4`). |
+| `g` | Sets the gutter (spacing between columns). Accepts numeric values corresponding to Bootstrap gutter classes. **Default: `4`**. |
 
 <sub>────────────</sub>
 
@@ -68,7 +68,7 @@ Lin Theme includes several handy shortcodes for content layout and styling:
 
 | Attributes | Description |
 |------------|-------------|
-|`col`	    |Default column size (1–12). Equivalent to `col-*` in Bootstrap.|
+|`col`	    |Default column size (1–12). Equivalent to `col-*` in Bootstrap. **Default: `12`**.|
 |`sm`	       |Column size for small screens (`col-sm-*`). Optional.|
 |`md`	       |Column size for medium screens (`col-md-*`). Optional.|
 |`lg`	       |Column size for large screens (`col-lg-*`). Optional.|
@@ -82,11 +82,11 @@ Lin Theme includes several handy shortcodes for content layout and styling:
 
 | Attributes | Description |
 |------------|-------------|
-|`color`	       |Sets the divider color. Accepts any valid CSS color value, e.g., `#7c3aed`, `red`, `rgba(0,0,0,0.5)`.|
-|`width`	       |Sets the divider width. Accepts any CSS width value, e.g., `60px`, `50%`.|
-|`height`	    |Sets the divider thickness. Accepts any CSS height value, e.g., `3px`.|
-|`align`	       |Sets horizontal alignment. Accepts `left`, `center`, `right`.|
-|`marginbottom` |Sets the bottom margin. Accepts any CSS margin value, e.g., `10px`, `1rem`.|
+|`color`	       |Sets the divider color. Accepts any valid CSS color value, e.g., `#7c3aed`, `red`, `rgba(0,0,0,0.5)`. **Default: `#7c3aed`**.|
+|`width`	       |Sets the divider width. Accepts any CSS width value, e.g., `60px`, `50%`. **Default: `60px`**.|
+|`height`	    |Sets the divider thickness. Accepts any CSS height value, e.g., `3px`. **Default: `3px`**.|
+|`align`	       |Sets horizontal alignment. Accepts `left`, `center`, `right`. **Default: `center`**.|
+|`marginbottom` |Sets the bottom margin. Accepts any CSS margin value, e.g., `10px`, `1rem`. **Default: `0px`**.|
 
 <sub>────────────</sub>
 
@@ -95,7 +95,7 @@ Lin Theme includes several handy shortcodes for content layout and styling:
 
 | Attributes | Description |
 |------------|-------------|
-|`height`	 |Default spacer height. Accepts any valid CSS height value, e.g., `20px`, `2rem`. **Default: 20px**. Used if no device-specific height is set.|
+|`height`	 |Default spacer height. Accepts any valid CSS height value, e.g., `20px`, `2rem`. **Default: `20px`**. Used if no device-specific height is set.|
 |`sm`	       |Spacer height for mobile devices (`≤ 767px`). Accepts any CSS height value, e.g., `10px`.|
 |`md`	       |Spacer height for tablets (`≤ 991px`). Accepts any CSS height value, e.g., `15px`.|
 |`lg`	       |Spacer height for desktops (`> 991px`). Accepts any CSS height value, e.g., `30px`.|
@@ -105,7 +105,26 @@ Lin Theme includes several handy shortcodes for content layout and styling:
 **────────────────────────────────────**
 
 ### Text
-- **[lin-heading]** – Adds a styled heading (H1–H6) with customizable font and color.  
+
+#### `[lin-heading]`
+**Description:** Adds a styled heading (H1–H6) with customizable tag, alignment, font weight, color, size, and bottom margin.
+
+| Attributes | Description |
+|------------|-------------|
+|`tag`	    |Sets the HTML heading tag. Accepts `h1`–`h6`. **Default: `h1`**.|
+|`align`	    |Sets text alignment. Accepts `left`, `center`, `right`. **Default: `center`**.|
+|`fontweight`|Sets the font weight. Accepts CSS font-weight values like `normal`, `bold`, `600`, etc. **Default: `bold`**.|
+|`color`	       |Sets the text color. Accepts any valid CSS color value, e.g., `#333333`, `red`, `rgba(0,0,0,0.7)`. **Default: `#333333`**.|
+|`marginbottom` |Sets bottom margin of the heading. Accepts any CSS margin value, e.g., `10px`, `1rem`. **Default: `10px`**.|
+|`size`	       |Sets font size. Accepts any CSS size value, e.g., `50px`, `3rem`. **Default: `50px`**.|
+
+<sub>────────────</sub>
+
+
+
+- **** – Adds a styled heading (H1–H6) with customizable font and color.
+
+- 
 - **[lin-subheading]** – Adds a smaller subheading with style options.  
 - **[lin-body-text]** – Displays paragraph text with optional styling.  
 
