@@ -103,7 +103,7 @@ Lin Theme includes several handy shortcodes for content layout and styling:
 <sub>────────────</sub>
   
 
-
+🔹🔹🔹🔹🔹
 ### Text
 - **[lin-heading]** – Adds a styled heading (H1–H6) with customizable font and color.  
 - **[lin-subheading]** – Adds a smaller subheading with style options.  
