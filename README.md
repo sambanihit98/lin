@@ -72,10 +72,10 @@ Lin Theme includes several handy shortcodes for content layout and styling:
 | Attributes | Description |
 |------------|-------------|
 |`col`	    |<ul><li>Default column size (1–12).</li> <li>Equivalent to `col-*` in Bootstrap.</li> <li>**Default: `12`**.</li></ul>|
-|`sm`	       |<ul><li>Column size for small screens (`col-sm-*`).</li> <li>Optional.</li></ul>|
-|`md`	       |<ul><li>Column size for medium screens (`col-md-*`).</li> <li>Optional.</li></ul>|
-|`lg`	       |<ul><li>Column size for large screens (`col-lg-*`).</li> <li>Optional.</li></ul>|
-|`xl`	       |<ul><li>Column size for extra-large screens (`col-xl-*`).</li> <li>Optional.</li></ul>|
+|`sm`	       |<ul><li>Column size for small screens (`col-sm-*`).</li> </ul>|
+|`md`	       |<ul><li>Column size for medium screens (`col-md-*`).</li> </ul>|
+|`lg`	       |<ul><li>Column size for large screens (`col-lg-*`).</li> </ul>|
+|`xl`	       |<ul><li>Column size for extra-large screens (`col-xl-*`).</li> </ul>|
 |`display`	 |<ul><li>Optional CSS display value (e.g., `block`, `flex`, `inline`).</li></ul>|
 
 <sub>────────────</sub>
