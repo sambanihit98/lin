@@ -14,6 +14,13 @@
 
 ---
 
+## Installation
+1. Upload the `lin` theme folder to `/wp-content/themes/`.
+2. Activate the theme via the **Appearance → Themes** menu in WordPress.
+3. Configure your customizer settings to adjust colors, fonts, and logo.
+   
+---
+
 ## Customizer
 Lin Theme comes with built-in customizer options so you can easily change the appearance of your website without touching code:
 - Header & footer colors
@@ -36,7 +43,10 @@ To use all features of Lin Theme, we recommend installing the following plugins:
 Lin Theme includes several handy shortcodes for content layout and styling:
 
 ### Layout
-- **[lin-wrapper]** – Wraps content into a container for structured layout.  
+- **[lin-wrapper]** – Wraps content into a container for structured layout.
+  **Attributes:**
+  **bg-color** – sets the background color of the wrapper.
+  
 - **[lin-row]** – Creates a horizontal row for columns, useful for grid layouts.  
 - **[lin-column]** – Defines a column inside a row; supports responsive sizing.  
 - **[lin-divider]** – Inserts a horizontal divider line to separate sections.  
@@ -69,13 +79,6 @@ Lin Theme includes several handy shortcodes for content layout and styling:
 - **Neutral Light:** #efeaf7
 - **Neutral Dark:** #28104e
 - **Text:** #333333
-  
----
-
-## Installation
-1. Upload the `lin` theme folder to `/wp-content/themes/`.
-2. Activate the theme via the **Appearance → Themes** menu in WordPress.
-3. Configure your customizer settings to adjust colors, fonts, and logo.
 
 ---
 
