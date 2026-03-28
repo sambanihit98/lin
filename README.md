@@ -55,16 +55,30 @@ Lin Theme includes several handy shortcodes for content layout and styling:
 #### `[lin-row]`
 **Description:** Creates a horizontal row for columns, useful for grid layouts. Supports Bootstrap alignment and gutter spacing.
 
-| Attribute | Description |
+| Attributes | Description |
 |----------|-------------|
 | `justify` | Sets horizontal alignment of columns. Accepts Bootstrap options: `start`, `center`, `end`, `around`, `between`, `evenly`. |
 | `align` | Sets vertical alignment of columns. Accepts Bootstrap options: `start`, `center`, `end`, `baseline`, `stretch`. |
 | `g` | Sets the gutter (spacing between columns). Accepts numeric values corresponding to Bootstrap gutter classes, default is `4` (`g-4`). |
 
 <sub>────────────</sub>
+
+#### `[lin-column]`
+**Description:** Defines a column inside a row; supports responsive sizing. 
+
+| Attributes | Description |
+|------------|-------------|
+|col	       |Default column size (1–12). Equivalent to col-* in Bootstrap.|
+|sm	       |Column size for small screens (col-sm-*). Optional.|
+|md	       |Column size for medium screens (col-md-*). Optional.|
+|lg	       |Column size for large screens (col-lg-*). Optional.|
+|xl	       |Column size for extra-large screens (col-xl-*). Optional.|
+|display	    |Optional CSS display value (e.g., block, flex, inline).|
+
+<sub>────────────</sub>
   
 
-- **[lin-column]** – Defines a column inside a row; supports responsive sizing.  
+
 - **[lin-divider]** – Inserts a horizontal divider line to separate sections.  
 - **[lin-spacer]** – Adds vertical spacing between elements for better layout control.  
 
