@@ -53,12 +53,13 @@ Lin Theme includes several handy shortcodes for content layout and styling:
 <sub>────────────</sub>
 
 #### `[lin-row]`
-**Description:** Creates a horizontal row for columns, useful for grid layouts.
+**Description:** Creates a horizontal row for columns, useful for grid layouts. Supports Bootstrap alignment and gutter spacing.
 
-| Attributes | Description |
+| Attribute | Description |
 |----------|-------------|
-| `justify` |  |
-| `align` |  |
+| `justify` | Sets horizontal alignment of columns. Accepts Bootstrap options: `start`, `center`, `end`, `around`, `between`, `evenly`. |
+| `align` | Sets vertical alignment of columns. Accepts Bootstrap options: `start`, `center`, `end`, `baseline`, `stretch`. |
+| `g` | Sets the gutter (spacing between columns). Accepts numeric values corresponding to Bootstrap gutter classes, default is `4` (`g-4`). |
 
 <sub>────────────</sub>
   
