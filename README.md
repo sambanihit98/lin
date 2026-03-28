@@ -33,12 +33,12 @@ To use all features of Lin Theme, we recommend installing the following plugins:
 
 | Name | Hex | Preview |
 |------|-----|--------|
-| Primary | `#7c3aed` | 🟪 |
-| Secondary | `#f45aaa` | 🟧 |
-| Accent | `#22bad8` | 🟦 |
-| Neutral Light | `#efeaf7` | ◻️ |
-| Neutral Dark | `#28104e` | ⬛ |
-| Text | `#333333` | ◼️ |
+| Primary | `#7c3aed` | ![Primary](https://singlecolorimage.com/get/7c3aed/40x20) |
+| Secondary | `#f45aaa` | ![Secondary](https://singlecolorimage.com/get/f45aaa/40x20) |
+| Accent | `#22bad8` | ![Accent](https://singlecolorimage.com/get/22bad8/40x20) |
+| Neutral Light | `#efeaf7` | ![Neutral Light](https://singlecolorimage.com/get/efeaf7/40x20) |
+| Neutral Dark | `#28104e` | ![Neutral Dark](https://singlecolorimage.com/get/28104e/40x20) |
+| Text | `#333333` | ![Text](https://singlecolorimage.com/get/333333/40x20) |
   
 ---
 
