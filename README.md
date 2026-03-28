@@ -43,17 +43,14 @@ To use all features of Lin Theme, we recommend installing the following plugins:
 Lin Theme includes several handy shortcodes for content layout and styling:
 
 ### Layout
-#### [lin-wrapper]
+#### `[lin-wrapper]`
 **Description:** Wraps content into a container for structured layout.
 
-| Attribute | Description |
+| Attributes | Description |
 |----------|-------------|
 | `bg-color` | Sets the background color of the wrapper. |
 
 <sub>────────────</sub>
-
-**Attributes:**
-- **bg-color** – sets the background color of the wrapper.
   
 - **[lin-row]** – Creates a horizontal row for columns, useful for grid layouts.  
 - **[lin-column]** – Defines a column inside a row; supports responsive sizing.  
