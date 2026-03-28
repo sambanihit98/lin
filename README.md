@@ -33,12 +33,12 @@ To use all features of Lin Theme, we recommend installing the following plugins:
 
 | Name | Hex | Preview |
 |------|-----|--------|
-| Primary | `#7c3aed` | <span style="background-color:#7c3aed; display:inline-block; width:40px; height:20px; border-radius:3px;"></span> |
-| Secondary | `#f45aaa` | <span style="background-color:#f45aaa; display:inline-block; width:40px; height:20px; border-radius:3px;"></span> |
-| Accent | `#22bad8` | <span style="background-color:#22bad8; display:inline-block; width:40px; height:20px; border-radius:3px;"></span> |
-| Neutral Light | `#efeaf7` | <span style="background-color:#efeaf7; display:inline-block; width:40px; height:20px; border-radius:3px; border:1px solid #ccc;"></span> |
-| Neutral Dark | `#28104e` | <span style="background-color:#28104e; display:inline-block; width:40px; height:20px; border-radius:3px;"></span> |
-| Text | `#333333` | <span style="background-color:#333333; display:inline-block; width:40px; height:20px; border-radius:3px;"></span> |
+| Primary | `#7c3aed` | 🟪 |
+| Secondary | `#f45aaa` | 🟧 |
+| Accent | `#22bad8` | 🟦 |
+| Neutral Light | `#efeaf7` | ◻️ |
+| Neutral Dark | `#28104e` | ⬛ |
+| Text | `#333333` | ◼️ |
   
 ---
 
