@@ -6,10 +6,6 @@
 
 ## Key Features
 - Fully responsive layout for desktop, tablet, and mobile.
-- Customizable header and footer with dynamic color options.
-- Smooth, animated dropdown menus for desktop and mobile.
-- Integrated sections for hero banners, company information, and legal pages.
-- Ready for easy integration with WordPress customizer for colors, fonts, and logo.
 - SEO-friendly markup and accessible design principles.
 
 ---
@@ -23,13 +19,7 @@
 
 ## Customizer
 Lin Theme comes with built-in customizer options so you can easily change the appearance of your website without touching code:
-- Header & footer colors
-- Menu hover & active colors
-- Logo upload & width
-- Site title font size
-- Header height and transparency
-- Active menu background and opacity
-- Hover effects for links and buttons
+- to be added... 
 
 ---
 
@@ -48,7 +38,7 @@ Lin Theme includes several handy shortcodes for content layout and styling:
 
 | Attributes | Description |
 |----------|-------------|
-| `bg-color` | Sets the background color of the wrapper. Accepts any valid CSS color value (e.g. `#ffffff`, `red`, `rgb(255,255,255)`, `rgba(0,0,0,0.5)`). |
+| `bg-color` |<ul><li>Sets the background color of the wrapper.</li> <li>Accepts any valid CSS color value (e.g. `#ffffff`, `red`, `rgb(255,255,255)`, `rgba(0,0,0,0.5)`).</li></ul>|
 
 <sub>────────────</sub>
 
