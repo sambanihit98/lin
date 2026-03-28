@@ -50,7 +50,7 @@ Lin Theme includes several handy shortcodes for content layout and styling:
 |----------|-------------|
 | `bg-color` | Sets the background color of the wrapper. |
 
----
+<sub>────────────</sub>
 
 **Attributes:**
 - **bg-color** – sets the background color of the wrapper.
