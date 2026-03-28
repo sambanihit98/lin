@@ -85,11 +85,11 @@ Lin Theme includes several handy shortcodes for content layout and styling:
 
 | Attributes | Description |
 |------------|-------------|
-|`color`	       |Sets the divider color. Accepts any valid CSS color value, e.g., `#7c3aed`, `red`, `rgba(0,0,0,0.5)`. **Default: `#7c3aed`**.|
-|`width`	       |Sets the divider width. Accepts any CSS width value, e.g., `60px`, `50%`. **Default: `60px`**.|
-|`height`	    |Sets the divider thickness. Accepts any CSS height value, e.g., `3px`. **Default: `3px`**.|
-|`align`	       |Sets horizontal alignment. Accepts `left`, `center`, `right`. **Default: `center`**.|
-|`marginbottom` |Sets the bottom margin. Accepts any CSS margin value, e.g., `10px`, `1rem`. **Default: `0px`**.|
+|`color`	       |<ul><li>Sets the divider color.</li> <li>Accepts any valid CSS color value, e.g., `#7c3aed`, `red`, `rgba(0,0,0,0.5)`.</li> <li>**Default: `#7c3aed`**.</li></ul>|
+|`width`	       |<ul><li>Sets the divider width.</li> <li>Accepts any CSS width value, e.g., `60px`, `50%`.</li> <li>**Default: `60px`**.</li></ul>|
+|`height`	    |<ul><li>Sets the divider thickness.</li> <li>Accepts any CSS height value, e.g., `3px`.</li> <li>**Default: `3px`**.</li></ul>|
+|`align`	       |<ul><li>Sets horizontal alignment.</li> <li>Accepts `left`, `center`, `right`.</li> <li>**Default: `center`**.</li></ul>|
+|`marginbottom` |<ul><li>Sets the bottom margin.</li> <li>Accepts any CSS margin value, e.g., `10px`, `1rem`.</li> <li>**Default: `0px`**.</li></ul>|
 
 <sub>────────────</sub>
 
