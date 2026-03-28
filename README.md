@@ -44,7 +44,13 @@ Lin Theme includes several handy shortcodes for content layout and styling:
 
 ### Layout
 #### [lin-wrapper]
-Wraps content into a container for structured layout.
+**Description:** Wraps content into a container for structured layout.
+
+| Attribute | Description |
+|----------|-------------|
+| `bg-color` | Sets the background color of the wrapper. |
+
+---
 
 **Attributes:**
 - **bg-color** – sets the background color of the wrapper.
