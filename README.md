@@ -48,11 +48,21 @@ Lin Theme includes several handy shortcodes for content layout and styling:
 
 | Attributes | Description |
 |----------|-------------|
-| `bg-color` | Sets the background color of the wrapper. |
+| `bg-color` | Sets the background color of the wrapper. Accepts any valid CSS color value (e.g. `#ffffff`, `red`, `rgb(255,255,255)`, `rgba(0,0,0,0.5)`). |
+
+<sub>────────────</sub>
+
+#### `[lin-row]`
+**Description:** Creates a horizontal row for columns, useful for grid layouts.
+
+| Attributes | Description |
+|----------|-------------|
+| `justify` |  |
+| `align` |  |
 
 <sub>────────────</sub>
   
-- **[lin-row]** – Creates a horizontal row for columns, useful for grid layouts.  
+
 - **[lin-column]** – Defines a column inside a row; supports responsive sizing.  
 - **[lin-divider]** – Inserts a horizontal divider line to separate sections.  
 - **[lin-spacer]** – Adds vertical spacing between elements for better layout control.  
