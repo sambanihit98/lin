@@ -153,7 +153,7 @@ Lin Theme includes several handy shortcodes for content layout and styling:
 | Attributes | Description |
 |------------|-------------|
 | `size`     | <ul><li>Sets the font size in pixels.</li><li>Accepts numeric values only.</li><li>If empty, it uses the global/default size.</li></ul> |
-| `color`    | <ul><li>Sets the text color.</li><li>Accepts any valid HEX color value, e.g., `#333333`, `#ff0000`.</li><li>**Default: `#333333`**.</li></ul> |
+| `color`    | <ul><li>Sets the text color.</li><li>Accepts any valid CSS color value, e.g., `#333333`, `red`, `rgba(0,0,0,0.5)`</li><li>**Default: `#333333`**.</li></ul> |
 | `align`    | <ul><li>Sets text alignment.</li><li>Accepts `left`, `center`, `right`.</li><li>If empty, uses default alignment.</li></ul> ||
 
 **────────────────────────────────────**
