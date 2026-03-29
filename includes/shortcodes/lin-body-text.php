@@ -12,7 +12,7 @@ function lin_body_text_shortcode($atts, $content = null)
     $atts = shortcode_atts(array(
         'size'  => '', // empty = use global
         'color' => '#333333',
-        'align' => '', // left default / left-center-right
+        'align' => '', // left default / 
     ), $atts, 'lin_body_text');
 
     $size  = $atts['size'] !== '' ? intval($atts['size']) : '';
