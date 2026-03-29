@@ -269,14 +269,14 @@ Lin Theme includes several handy shortcodes for content layout and styling:
 
 ### Dynamic Content Blocks
 
-## `[lin_testimonial]`
+#### `[lin_testimonial]`
 **Description:** Displays a dynamic testimonial carousel from the `testimonial` custom post type.
 
 **Attributes:** None
 
 <sub>────────────</sub>
 
-## `[lin_latest_portfolio]`
+#### `[lin_latest_portfolio]`
 **Description:** Displays the latest portfolio items dynamically from the `portfolio` custom post type in a responsive grid layout.
 
 | Attributes | Description |
