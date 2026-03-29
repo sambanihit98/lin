@@ -160,8 +160,29 @@ Lin Theme includes several handy shortcodes for content layout and styling:
 
 
 ### Buttons & Call-to-Action
-- **[lin-button]** – Adds a clickable button with link, colors, and hover effects.  
-- **[lin-cta]** – Adds a call-to-action section with heading, text, and button.  
+
+#### `[lin-button]`
+**Description:** Adds a clickable button with customizable link, colors, alignment, and CSS class. Supports opening the link in a new tab safely and can be styled via custom classes or inline color attributes.
+
+| Attributes | Description |
+|------------|-------------|
+| `url`       | <ul><li>Specifies the button link URL.</li><li>Accepts any valid URL.</li><li>**Default: `#`**.</li></ul> |
+| `color`     | <ul><li>Sets the button background color.</li><li>Accepts any valid HEX or CSS color value.</li><li>**Default: `#7c3aed`**.</li></ul> |
+| `textcolor` | <ul><li>Sets the button text color.</li><li>Accepts any valid HEX or CSS color value.</li><li>**Default: `#ffffff`**.</li></ul> |
+| `class`     | <ul><li>Optional CSS class for additional styling.</li><li>Can be used to apply custom styles from your theme or stylesheet.</li></ul> |
+| `target`    | <ul><li>Specifies how the link opens.</li><li>Accepts `_self` (same tab) or `_blank` (new tab).</li><li>**Default: `_self`**.</li></ul> |
+| `align`     | <ul><li>Sets horizontal alignment of the button.</li><li>Accepts `left`, `center`, `right`.</li><li>**Default: `left`**.</li></ul> |
+
+<sub>────────────</sub>
+
+#### `[lin-cta]`
+**Description:** Adds a Call-to-Action section with heading, subheading, button, and background.  
+
+| Attributes | Description |
+|------------|-------------|
+| *(none)*   | All settings are controlled via the Customizer. |
+
+**────────────────────────────────────**
 
 ### Media & Interactive
 - **[lin-slider]** – Creates a slider/carousel for images, content, or cards.  
