@@ -25,3 +25,9 @@ require_once get_template_directory() . '/includes/shortcodes/lin-cta.php';
 require_once get_template_directory() . '/includes/shortcodes/lin-card.php';
 require_once get_template_directory() . '/includes/shortcodes/lin-testimonial.php';
 require_once get_template_directory() . '/includes/shortcodes/lin-latest-portfolio.php';
+
+// NEW
+require_once get_template_directory() . '/includes/shortcodes/lin-icon.php';
+require_once get_template_directory() . '/includes/shortcodes/lin-accordion.php';
+require_once get_template_directory() . '/includes/shortcodes/lin-map.php';
+require_once get_template_directory() . '/includes/shortcodes/lin-anchor.php';

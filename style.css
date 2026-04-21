@@ -17,6 +17,8 @@ Version: 1.0.0
         2.3. Lin Wrapper              -- [lin_wrapper]
         2.4. Lin CTA (Call to Action) -- [lin_cta]
         2.5. Lin Card                 -- [lin_card] + [lin-card-img] + [lin-card-title] + [lin-card-desc] + [lin-card-btn]
+        2.6. Lin Accordion            -- [lin_accordion] + [lin_accordion_title] + [lin_accordion_desc]
+
 
     3. Post Types
         3.1. Lin Portfolio            -- 
@@ -117,7 +119,7 @@ Version: 1.0.0
     /* ----------------------------- */
     /* 2.3. Lin Wrapper */
     .lin-wrapper{
-        padding: 40px 0px 40px 0px; 
+        padding: 60px 0px 60px 0px; 
     }
 
     /* ----------------------------- */
@@ -184,7 +186,9 @@ Version: 1.0.0
     }
 
     .lin-card-btn {
-        display: inline-block;
+        /* display: inline-block !important;
+        width: auto !important; */
+        align-self: flex-start; 
         padding: 10px 16px;
         background: #7c3aed;
         color: #fff;
@@ -197,6 +201,49 @@ Version: 1.0.0
     .lin-card-btn:hover {
         background: #6d28d9;
     }
+
+    /* ----------------------------- */
+    /* 2.6. Lin Accordion */
+    .lin-accordion{
+        display: flex; 
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .lin-accordion-wrapper{
+        border-radius: 16px; 
+        padding: 0 24px; 
+        overflow: hidden;
+        /* border: 1px solid #e5e7eb;  styles in shortcode */ 
+        /* background-color: #ffffff;  styles in shortcode */
+    }
+
+    .lin-accordion-title{
+        list-style: none; 
+        cursor: pointer; 
+        padding: 24px 0; 
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center;
+        /* font-size: 18px;   styles in shortcode */
+        /* font-weight: 600;  styles in shortcode */
+        /* color: #333333;    styles in shortcode */
+    }
+
+    .lin-accordion-title span{
+        font-size: 24px;
+        /* color: #7c3aed; */
+    }
+
+    .lin-accordion-desc{
+        padding: 0 0 24px; 
+        line-height: 1.8; 
+        border-top: 1px solid #f1f5f9; 
+        padding-top: 20px;
+        /* color: #6b7280;   styles in shortcode */
+        /* font-size: 16px;  styles in shortcode */
+    }
+
 
 /* -------------------------------------------------------------------------------*/
 /* 3. Post Types */
@@ -626,6 +673,165 @@ Version: 1.0.0
 
 
 
+
+
+
+
+
+
+
+
+/* =========================
+   COMMENTS WRAPPER
+========================= */
+#comments {
+    margin-top: 50px;
+    padding-top: 30px;
+}
+
+/* =========================
+   COMMENT LIST
+========================= */
+.commentlist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.commentlist li {
+    margin-bottom: 20px;
+}
+
+/* Extra safety for nested replies */
+.commentlist .children {
+    margin-left: 30px;
+    margin-top: 15px;
+    padding-left: 0;
+}
+
+.commentlist .children li {
+    margin-bottom: 15px;
+}
+
+/* =========================
+   SINGLE COMMENT CARD
+========================= */
+.comment-body {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 15px 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* =========================
+   AUTHOR NAME
+========================= */
+.comment-author {
+    font-weight: 600;
+    font-size: 14px;
+    color: #7c3aed;
+}
+
+/* avatar */
+.comment-author img {
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+/* =========================
+   META (date)
+========================= */
+.comment-meta {
+    font-size: 12px;
+    color: #888;
+    margin-top: 3px;
+}
+
+/* =========================
+   COMMENT TEXT
+========================= */
+.comment-content {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* =========================
+   REPLY LINK
+========================= */
+.reply {
+    margin-top: 10px;
+}
+
+.reply a {
+    display: inline-block;
+    font-size: 12px;
+    color: #7c3aed;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #7c3aed;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.reply a:hover {
+    background: #7c3aed;
+    color: #fff;
+}
+
+/* =========================
+   COMMENT FORM
+========================= */
+#respond {
+    margin-top: 40px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 12px;
+}
+
+#respond input,
+#respond textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+#respond textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* =========================
+   SUBMIT BUTTON (FIXED)
+   - right aligned
+   - not full width
+========================= */
+
+#respond .form-submit {
+    text-align: right;
+    margin-top: 10px;
+}
+
+#respond input[type="submit"] {
+    width: auto !important;
+    display: inline-block !important;
+    background: #7c3aed;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 16px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+#respond input[type="submit"]:hover {
+    background: #5b21b6;
+}
 
 
 

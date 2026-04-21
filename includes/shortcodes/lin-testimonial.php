@@ -29,7 +29,7 @@ function lin_testimonial_shortcode($atts)
                         $image_url = get_the_post_thumbnail_url(get_the_ID(), 'thumbnail') ?: 'https://placehold.co/100x100';
                         $testimonial_text = get_the_content();
                 ?>
-                        <div class="lin-carousel-slide">
+                        <div class="lin-carousel-slide d-flex">
                             <div class="testimonial-card">
                                 <div class="testimonial-top">
                                     <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr($client_name ?: 'Client Photo'); ?>" class="testimonial-img">

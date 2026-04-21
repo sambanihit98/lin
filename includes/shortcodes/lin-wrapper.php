@@ -14,8 +14,13 @@ function lin_wrapper_shortcode($atts, $content = null)
 
     $color = esc_attr($atts['bg-color']);
 
-    return trim("<div class='lin-wrapper' style='background-color:{$color}'>
-                <div class='container'>" . do_shortcode($content) . "</div>
-            </div>");
+    $output  = "<div class='lin-wrapper' style='background-color:{$color};'>";
+    $output .= "<div class='container'>";
+    $output .= do_shortcode(shortcode_unautop($content));
+    $output .= "</div>";
+    $output .= "</div>";
+
+    return $output;
 }
 add_shortcode('lin_wrapper', 'lin_wrapper_shortcode');
+add_filter('the_content', 'shortcode_unautop');

@@ -6,6 +6,7 @@
     <div>
         <div>
             <h1 style="
+                margin-top: 40px;
                 font-size: <?php echo get_theme_mod('page_title_font_size', 60) ?>px; 
                 font-weight: <?php echo get_theme_mod('page_title_font_weight', 600); ?>;
             ">
@@ -18,5 +19,6 @@
 <section class="page-wrap">
     <?php get_template_part('includes/section', 'content'); ?>
 </section>
+
 
 <?php get_footer(); ?>

@@ -9,6 +9,8 @@ get_header();
     <div>
         <div>
             <h1 style="
+
+                margin-top: 40px;
                 font-size: <?php echo get_theme_mod('page_title_font_size', 60) ?>px; 
                 font-weight: <?php echo get_theme_mod('page_title_font_weight', 600); ?>;
             ">
@@ -26,7 +28,7 @@ get_header();
 
         <?php
         $categories = get_terms(array(
-            'taxonomy' => 'category',
+            'taxonomy' => 'portfolio_category',
             'hide_empty' => true
         ));
 
@@ -55,7 +57,7 @@ get_header();
 
             if ($query->have_posts()) :
                 while ($query->have_posts()) : $query->the_post();
-                    $terms = get_the_terms(get_the_ID(), 'category'); ?>
+                    $terms = get_the_terms(get_the_ID(), 'portfolio_category'); ?>
                     <div class="col-lg-4 col-md-6">
                         <div>
                             <div class="lin-card">

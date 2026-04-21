@@ -24,7 +24,7 @@ function lin_latest_portfolio_shortcode($atts)
     if ($query->have_posts()) {
         while ($query->have_posts()) {
             $query->the_post();
-            $terms = get_the_terms(get_the_ID(), 'category');
+            $terms = get_the_terms(get_the_ID(), 'portfolio_category');
 
             $output .= '<div class="col-lg-4 col-md-6">';
 

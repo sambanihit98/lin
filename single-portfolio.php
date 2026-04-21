@@ -21,7 +21,7 @@
             <div class="col-lg-7 mb-4 mb-lg-0">
                 <?php if (has_post_thumbnail()) : ?>
                     <a href="<?php the_permalink(); ?>">
-                        <?php the_post_thumbnail('medium', array('class' => 'card-img-top', 'style' => 'width:100%; height:auto;')); ?>
+                        <?php the_post_thumbnail('medium', array('class' => 'card-img-top', 'style' => 'width:100%; height:auto; border-radius: 20px;')); ?>
                     </a>
                 <?php endif; ?>
             </div>
@@ -71,7 +71,7 @@
                 <?php endif; ?>
 
                 <?php
-                $categories = get_the_terms(get_the_ID(), 'category');
+                $categories = get_the_terms(get_the_ID(), 'portfolio_category');
                 if ($categories && !is_wp_error($categories)) :
                 ?>
                     <div class="card mb-3" style="border:1px solid #ddd; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.05); padding:15px;">

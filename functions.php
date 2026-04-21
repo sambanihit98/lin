@@ -17,7 +17,6 @@ function lin_enqueue_assets()
 {
     // Styles
     wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css');
-    wp_enqueue_style('main', get_template_directory_uri() . '/css/main.css'); // Empty / will delete it
     wp_enqueue_style('style', get_template_directory_uri() . '/style.css');
 
     // Google Fonts
@@ -53,8 +52,47 @@ function lin_enqueue_assets()
         '1.0', // version
         true // load in footer
     );
+
+    // Enqueue Font Awesome
+    wp_enqueue_style(
+        'font-awesome',
+        'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css',
+        array(),
+        '6.5.2'
+    );
 }
 add_action('wp_enqueue_scripts', 'lin_enqueue_assets');
+
+
+//GSAP
+function lin_scripts()
+{
+
+    wp_enqueue_script(
+        'gsap',
+        'https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js',
+        array(),
+        null,
+        true
+    );
+
+    wp_enqueue_script(
+        'animations-js',
+        get_template_directory_uri() . '/js/animations.js',
+        array('gsap'),
+        null,
+        true
+    );
+
+    wp_enqueue_script(
+        'gsap-scrolltrigger',
+        'https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js',
+        array('gsap'),
+        null,
+        true
+    );
+}
+add_action('wp_enqueue_scripts', 'lin_scripts');
 
 
 // -------------------------------------------------------------------------
@@ -86,6 +124,13 @@ function lin_theme_setup()
 add_action('after_setup_theme', 'lin_theme_setup');
 
 // -------------------------------------------------------------------------
+// CUSTOM IMAGE SIZES
+// -------------------------------------------------------------------------
+add_image_size('blog-large', 800, 400, true);
+add_image_size('blog-small', 300, 200, true);
+
+
+// -------------------------------------------------------------------------
 // HEX RGBA HELPER FUNCTIONS
 // -------------------------------------------------------------------------
 function lin_hex2rgba($hex, $opacity = 1)
@@ -99,18 +144,7 @@ function lin_hex2rgba($hex, $opacity = 1)
 }
 
 // -------------------------------------------------------------------------
-// Page Title
-// -------------------------------------------------------------------------
-add_filter('admin_title', function ($admin_title, $title) {
-    global $post;
-    if (isset($post->post_title) && !empty($post->post_title)) {
-        $admin_title = $post->post_title . ' ‹ ' . get_bloginfo('name');
-    }
-    return $admin_title;
-}, 10, 2);
-
-// -------------------------------------------------------------------------
-// CUSTOM POST TYPES & TAXONOMIES
+// CUSTOM POST TYPE: PORTFOLIO
 // -------------------------------------------------------------------------
 function lin_portfolio_cpt()
 {
@@ -132,18 +166,35 @@ function lin_portfolio_cpt()
         'supports' => array('title', 'editor', 'thumbnail'),
         'menu_icon' => 'dashicons-portfolio',
         'rewrite' => array('slug' => 'portfolio'),
+        'taxonomies' => array('portfolio_category'), // IMPORTANT
     );
 
     register_post_type('portfolio', $args);
 }
 add_action('init', 'lin_portfolio_cpt');
 
-function lin_portfolio_taxonomies()
+// -------------------------------------------------------------------------
+// CUSTOM TAXONOMY: PORTFOLIO CATEGORY
+// -------------------------------------------------------------------------
+function lin_portfolio_category_taxonomy()
 {
-    register_taxonomy_for_object_type('category', 'portfolio');
-    register_taxonomy_for_object_type('post_tag', 'portfolio');
+    $labels = array(
+        'name' => 'Portfolio Categories',
+        'singular_name' => 'Portfolio Category',
+        'menu_name' => 'Portfolio Categories',
+    );
+
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'hierarchical' => true,
+        'show_in_rest' => true,
+        'rewrite' => array('slug' => 'portfolio-category'),
+    );
+
+    register_taxonomy('portfolio_category', array('portfolio'), $args);
 }
-add_action('init', 'lin_portfolio_taxonomies');
+add_action('init', 'lin_portfolio_category_taxonomy');
 
 
 // ---------------------------------------------------------------------------
@@ -327,19 +378,17 @@ function lin_add_customizer_controls($wp_customize, $section, $controls)
 
 
 
-// Portfolio items single page should have active state in Portfolio header menu
+// -------------------------------------------------------------------------
+// PORTFOLIO MENU ACTIVE STATE
+// -------------------------------------------------------------------------
 function lin_portfolio_menu_active($classes, $item)
 {
-    // Check if current page is a single portfolio item
     if (is_singular('portfolio')) {
-
-        // If menu item URL matches your portfolio page slug
         if (strpos($item->url, 'portfolio') !== false) {
             $classes[] = 'current-menu-item';
             $classes[] = 'current-menu-ancestor';
         }
     }
-
     return $classes;
 }
 add_filter('nav_menu_css_class', 'lin_portfolio_menu_active', 10, 2);
@@ -356,14 +405,14 @@ function lin_filter_portfolio()
     $args = ['post_type' => 'portfolio', 'posts_per_page' => 6, 'paged' => $paged];
 
     if ($category !== 'all') {
-        $args['tax_query'] = [['taxonomy' => 'category', 'field' => 'slug', 'terms' => $category,]];
+        $args['tax_query'] = [['taxonomy' => 'portfolio_category', 'field' => 'slug', 'terms' => $category,]];
     }
 
     $query = new WP_Query($args);
 
     if ($query->have_posts()):
         while ($query->have_posts()): $query->the_post();
-            $terms = get_the_terms(get_the_ID(), 'category'); ?>
+            $terms = get_the_terms(get_the_ID(), 'portfolio_category'); ?>
             <div class="col-lg-4 col-md-6">
                 <div>
                     <div class="lin-card">
